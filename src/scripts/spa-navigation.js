@@ -133,5 +133,5 @@ function handleProductToHomeTransition(navigateEvent, toPath, fromPath) {
       })
   }
 
-  navigateEvent.transitionWhile(handler())
+  navigateEvent.intercept({ handler });
 }
